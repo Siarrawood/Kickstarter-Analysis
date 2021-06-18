@@ -10,15 +10,19 @@
 * In order to help Louise organize her incentives, it would be useful to see how much money people pledge to campaigns in the past. Using the ROUND formula again with the Pledged column data, we just slightly modified it to specify 2 digits after the decimal rather than a whole number so we could see the percentage.   
 * The new column created had errors that had to be dubugged. While all campaigns had a fundraising goal not every campaign has backers. Since there is no number to dived by in the formula, an error occurs that should be cleaned up. We nested the =IFERROR(value,value_if_error) formula and the ROUND formula so we get a zero-value input. Next, filters were applied on the cells to only include the Theater category because Louise is just interested in the theater campaigns. 
 * While Louise is focused on theater campaigns, it is still beneficial to look at the outcomes of all the categories for additional insight.
-* The Kickstarter data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." The first Pivot table and graph were created to help Louise uncover trends in the data for the parent categories. 
+* The Kickstarter data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." 
+
+* The first Pivot table and graph were created to help Louise uncover trends in the data for the parent categories. 
 * ![](ParentCategoryOutcomes.png)
 * In the US, theater campaigns had the most successful campaigns at 525. However, music campaigns had the highest success rate at 77%. Theater, music, film and video, and technology all had more successful campaigns than failed, while food, games, photography, and publishing had more failed than successful. Interestingly enough, journalism had no successful campaigns at all. It looks like Louise chose a good category for funding a campaign. 
-* Another pivot graph was created to illustrate the trends within theatrical productions since it is more relevant for Louise.
+
+* Another pivot graph was created to illustrate the trends within theatrical productions in Great Britain as it is more relevant for Louise.
+![](SubCategoryOutcomes.png)
 * 
 * A pivot chart was generated to help Louise determine if the the length of a campaign correlates with its success. Then, a line chart with the same data was created since Louise is looking at trends over time. 
 ![](Outcomes_Based_On_Launch_Date.png)
 * The months of May and June have the greatest success rates of 60% and 54% respectively. May launched the most successful campaigns at 234. Interestingly, January, June, July, and October all had about the same amount of failed launched campaigns of 150. 
-* May sems like a good month for Louise to launch her campaign. 
+* May or June seem like good months for Louise to launch her campaign. 
 ### Analysis of Outcomes Based on Launch Date
 ![](Theater_Outcomes_vs_Launch.png)
 * Pivot tables and graphs in Excel were used to visualize the campaign outcomes based on the launch date. The outcomes were labeled as "successful," "failed," or "canceled."
@@ -35,7 +39,11 @@ YEAR(serial_number)
 * Learning the Markdown Syntax was a challenge for me as I have never used Github or made a README. I kept getting an error when uploading my graphs from the Excel worksheet into the README. 
 * I also had difficulty getting my graphs inserted in the README as I did not realize I had to upload it to GitHub before I could reference it in the README.
 ## Results
-* The launch date of a campaign does correlate with its success. Campaigns launched in the spring and summer months, particulary May, June, and July are more likely to be successful than those beginning in the winter months like November and December. Louise should aim to launch her campaign during May or June. 
-* Failed Kickstarter campaigns have much higher fundraising goals than those that are successful. Campaigns that were funded with under $4,000 had the most success rate at about 80%.  
-* Some limitations of this dataset include not knowing the target audience completely. It would be helpful to look at the demographics and behaviors of Louise's target audience. Knowing the age and geographical location of the play's audience could help give additional insight and help with campaign strategics. 
-* We could graph the 
+* Overall, the data exemplifies that theater is a very populat and successful type of campaign. 
+* The launch date of a campaign does correlate with its success. There is a spike of successful campaigns beginning in June that dwindles off by the end of the year.
+* Campaigns launched in the spring and summer months, particulary May, June, and July are more likely to be successful than those beginning in the winter months like November and December. Louise should aim to launch her campaign during May or June. This could be due to holidays in the winter months, as people are spending more during these months. 
+* Failed Kickstarter campaigns have much higher fundraising goals than those that are successful. It is better to have a more reasonable goal under $5,000. Furthermore, campaigns that were funded with under $4,000 had the most success rate at about 80%.  
+* One limitation of this dataset is the lack of data on the donors. It would be useful to know their preferred method of donation or previously effective fundraising strategies.
+* Some other limitations of this dataset include not knowing the target audience completely. It would be helpful to look at the demographics and behaviors of Louise's target audience as this could affect her campaign. Knowing the age and geographical location of the play's audience could help give additional insight and help with campaign strategics. 
+* 
+* We could create a pivot graph that illustrates which methods of donation made the most money between online, mail, or in-person donations. Similary, we could make a graph that depicts the best fundraising strategies (events, phone calls, direct mail, or email) .

@@ -13,12 +13,13 @@
 * The Kickstarter data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." 
 
 * The first Pivot table and graph were created to help Louise uncover trends in the data for the parent categories. 
-* ![](ParentCategoryOutcomes.png)
+![](ParentCategoryOutcomes.png)
 * In the US, theater campaigns had the most successful campaigns at 525. However, music campaigns had the highest success rate at 77%. Theater, music, film and video, and technology all had more successful campaigns than failed, while food, games, photography, and publishing had more failed than successful. Interestingly enough, journalism had no successful campaigns at all. It looks like Louise chose a good category for funding a campaign. 
 
 * Another pivot graph was created to illustrate the trends within theatrical productions in Great Britain as it is more relevant for Louise.
-![](SubCategoryOutcomes.png)
-* 
+![](SubcategoryOutcomes.png)
+* In Great Britain, theatrical plays are the most successful subcategory. Out of all 258 successful theater campaigns, 238 of them were plays. Thus, we can conclude that theather fundraising campaigns, specifically plays, are the most successful.
+
 * A pivot chart was generated to help Louise determine if the the length of a campaign correlates with its success. Then, a line chart with the same data was created since Louise is looking at trends over time. 
 ![](Outcomes_Based_On_Launch_Date.png)
 * The months of May and June have the greatest success rates of 60% and 54% respectively. May launched the most successful campaigns at 234. Interestingly, January, June, July, and October all had about the same amount of failed launched campaigns of 150. 
@@ -39,11 +40,10 @@ YEAR(serial_number)
 * Learning the Markdown Syntax was a challenge for me as I have never used Github or made a README. I kept getting an error when uploading my graphs from the Excel worksheet into the README. 
 * I also had difficulty getting my graphs inserted in the README as I did not realize I had to upload it to GitHub before I could reference it in the README.
 ## Results
-* Overall, the data exemplifies that theater is a very populat and successful type of campaign. 
+* Overall, the data exemplifies that theater is a very popular and successful type of campaign. 
 * The launch date of a campaign does correlate with its success. There is a spike of successful campaigns beginning in June that dwindles off by the end of the year.
 * Campaigns launched in the spring and summer months, particulary May, June, and July are more likely to be successful than those beginning in the winter months like November and December. Louise should aim to launch her campaign during May or June. This could be due to holidays in the winter months, as people are spending more during these months. 
-* Failed Kickstarter campaigns have much higher fundraising goals than those that are successful. It is better to have a more reasonable goal under $5,000. Furthermore, campaigns that were funded with under $4,000 had the most success rate at about 80%.  
+* Failed Kickstarter campaigns have much higher fundraising goals than those that are successful. It is better to have a more reasonable goal under $5,000. Furthermore, campaigns that were funded with under $4,000 had the most success rate at about 80%. 
 * One limitation of this dataset is the lack of data on the donors. It would be useful to know their preferred method of donation or previously effective fundraising strategies.
 * Some other limitations of this dataset include not knowing the target audience completely. It would be helpful to look at the demographics and behaviors of Louise's target audience as this could affect her campaign. Knowing the age and geographical location of the play's audience could help give additional insight and help with campaign strategics. 
-* 
-* We could create a pivot graph that illustrates which methods of donation made the most money between online, mail, or in-person donations. Similary, we could make a graph that depicts the best fundraising strategies (events, phone calls, direct mail, or email) .
+* We could create a pivot graph that illustrates which methods of donation made the most money between online, mail, or in-person donations. Similary, we could make a graph that depicts the best fundraising strategies (events, phone calls, direct mail, or email). 

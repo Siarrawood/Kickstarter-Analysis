@@ -9,7 +9,9 @@
 * The purpose of this project is to analyze crowdfunding data to help determine trends in project campaigns using Excel. Specifically, comparing the outcomes of different campaigns based on their launch dates and their funding goals through summary tables, charts, and graphs.  
 ## Analysis and Challenges
 * While Louise is focused on theater campaigns, it is beneficial to look at the outcomes of all the categories for additional insight.
-* The data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." I generated a pivot chart to help Louise determine if the the length of a campaign correlates with its success. I then created a line chart with the same data as I am looking at trends over time. 
+* The data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." A pivot chart was generated to help Louise determine if the the length of a campaign correlates with its success. I then created a line chart with the same data as I am looking at trends over time. 
+![](Outcomes_Based_On_Launch_Date.png)
+* The months of May and June have the greatest success rates of 60% and 54% respectively. May launched the most successful campaigns at 234. Interestingly, January, June, July, and October all had about the same amount of failed launched campaigns of 150. 
 ### Analysis of Outcomes Based on Launch Date
 ![](Theater_Outcomes_vs_Launch.png)
 * Pivot tables and graphs in Excel were used to visualize the campaign outcomes based on the launch date. The outcomes were labeled as "successful," "failed," or "canceled."

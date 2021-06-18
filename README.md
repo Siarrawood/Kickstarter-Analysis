@@ -1,13 +1,14 @@
 # Kickstarting with Excel
 ## Overview of Project
 * This project explores the various trends in project campaigns to help a friend, Louise, establish her campaign strategy. The Kickstarter data was organized and sorted, and visualizations were created to strengthen the analysis. 
+### Purpose
+* The purpose of this project is to analyze crowdfunding data to help determine trends in project campaigns using Excel. Specifically, comparing the outcomes of different theater campaigns based on their launch dates and their funding goals through summary tables, charts, and graphs.  
+* Louise's play came close to its fundraising goal in a short amont of time so visualizing campaign oucomes based on lauch dates and funding goals is beneficial to ensure success.
+## Analysis and Challenges
 * First, the data was filtered so we could focus on the projects that had a similar monetary goal as Louis of $12,000. Conditional formatting was then used to organize the outcomes column of the Kickstarter campaigns in the data: cells that denoted a successful campaign were colored green and those that represented failed campaigns were colored red. 
 * The deficit between the fundraising goal and the amount pledged was calculated using Excel's ROUND formula to measure how much of the campaign's goal was actually met. We made a new column in the data for easier visualization. Then, how close a campaign came to reaching or even exceeding the funding goal could be rapidly determined. It seemed many campaigns only barely missed their goal amount.
 * In order to help Louise organize her incentives, it would be useful to see how much money people pledge to campaigns in the past. Using the ROUND formula again with the Pledged column data, we just slightly modified it to specify 2 digits after the decimal rather than a whole number.   
 * The new column created had errors that had to be dubugged. While all campaigns had a fundraising goal not every campaign has backers. Since there is no number to dived by in the formula, an error occurs that should be cleaned up. We nested the =IFERROR(value,value_if_error) formula and the ROUND formula so we get a zero-value input. Filters were appled on the cells to only include the Theater category because Louise is only interested in the theater campaigns. 
-### Purpose
-* The purpose of this project is to analyze crowdfunding data to help determine trends in project campaigns using Excel. Specifically, comparing the outcomes of different campaigns based on their launch dates and their funding goals through summary tables, charts, and graphs.  
-## Analysis and Challenges
 * While Louise is focused on theater campaigns, it is beneficial to look at the outcomes of all the categories for additional insight.
 * The data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." A pivot chart was generated to help Louise determine if the the length of a campaign correlates with its success. I then created a line chart with the same data as I am looking at trends over time. 
 ![](Outcomes_Based_On_Launch_Date.png)

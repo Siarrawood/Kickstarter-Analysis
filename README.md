@@ -13,38 +13,50 @@
 * The Kickstarter data was broken down further by separating the "Category and Subcategory" into 2 separate columns: "Parent Category" and "Subcategory." 
 
 * The Pivot graph shown below were created to help Louise uncover trends in the data for the parent categories. 
+
 ![](ParentCategoryOutcomes.png)
 * In the US, theater campaigns had the most successful campaigns at 525. However, music campaigns had the highest success rate at 77%. Theater, music, film and video, and technology all had more successful campaigns than failed, while food, games, photography, and publishing had more failed than successful. Interestingly enough, journalism had no successful campaigns at all. It looks like Louise chose a good category for funding a campaign. 
 
 * Another pivot graph was created to illustrate the trends of theatrical productions in Great Britain as it is more relevant for Louise.
+
 ![](SubcategoryOutcomes.png)
+
 * In Great Britain, theatrical plays are the most successful subcategory. Out of all 258 successful theater campaigns, 238 of them were plays. Thus, we can conclude that theather fundraising campaigns, specifically plays, are the most successful.
 
 * A pivot chart was generated to help Louise determine if the the length of a campaign correlates with its success. Then, a line chart with the same data was created since Louise is looking at trends over time. 
+
 ![](Outcomes_Based_On_Launch_Date.png)
+
 * The months of May and June have the greatest success rates of 60% and 54% respectively. May launched the most successful campaigns at 234. Interestingly, January, June, July, and October all had about the same amount of failed launched campaigns of 150. 
 * May or June seem like good months for Louise to launch her campaign. 
 
 * The measures of central tendancy of the data were analyzewd and the mean, median, and mode of the dataset was calculated. For a further analysis, we also measured the spread of the dataset: standard deviation and variance. These values can be found in the table below.
 
 ![image](https://user-images.githubusercontent.com/78868312/122626393-01338400-d070-11eb-981f-2798617c5902.png)
+
  * The data does have similar distributions in each subeset since the mean of each is close to the third quartile. This depicts there is a trend.
  * The mean goal for failed campaigns at about $10000 is about double the mean goal for successful ones at $5000. Furthermore the standard deviations are about two times the IQR in every distribution except the failed campaigns, which indicates there must be some failed Kickstarters with really high goals. 
  * The standard deviations are also larger than the mean values in every distribution so everything under the mean is close to the center. As such, the fundraising goal has a mich better chance of being successful if it stays below $5000. 
 * Then a Box Plot was made to actually show the distribution of the Kickstarter data.
+
 ![](BoxPlot.png)
+
 * The mean campaign is about £4,000, but it is ouside the range for amount pledged, so Louise should try to get her play produced for less than £4,000. The median of the campaign goals is at about 2,000, so half of the goals are less than £2,000, which is right above the third quartile for pledged amounts. This means that 75% of the amounts pledged were around £2,000.
 
 ### Analysis of Outcomes Based on Launch Date
 * Pivot tables and a line graph in Excel were used to visualize the campaign outcomes based on the launch date. The outcomes were labeled as "successful," "failed," or "canceled."
+
 ![](Theater_Outcomes_vs_Launch.png)
+
 * A new column was created in the workbook and the year was extracted from the "Date Created Conversion" column using the YEAR() function in Excel. Then a Pivot table was produced with the data, which was made into the above line graph.
 * June had the highest number of successful campaigns at 111, and July and October both had the most failed with 50. 
 * The number of successful and failed stay relatively similar until around May and June where the amount of successful campaigns rocketed up. Interestingly, the difference decreases as the year progresses to almost the exact same number in December. There is definitely a trend represented in this data.
 
 ### Analysis of Outcomes Based on Goals
 * Another pivot table and line graph were made to portray the percentage of successful, failed, and canceled plays based on the funding goal amount. 
+
 ![](Outcomes_vs_Goals.png)
+
 * The outcome and goal data for the plays category were collected using the COUNTIFS() function. The SUM() function was also used to calculate the "Total Projects" column with each's row number of successful, failed, or canceled projects. Then the above line graph was built using this data.
 * The highest percentage of success was with campaigns that had goals of less than $1,000 at almost 80%. The percent chance of success slowly declines as the goal increases, but then drops off rather steeply 45% down to just 20% around $30,000. The percentage of success then slightly increases when the goal is between $35,000 to $45,000 to little under 65%. However, it drastically drops to 0% as the goal approaches $50,000. The goal does seem to have an affect on the success of the campaign.
 * The percentage of success is 50% when the goal of a campaign is between $15,000 and $20,000. 

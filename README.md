@@ -33,14 +33,16 @@
  * The standard deviations are also larger than the mean values in every distribution so everything under the mean is close to the center. As such, the fundraising goal has a mich better chance of being successful if it stays below $5000. 
 * Then a Box Plot was made to actually show the distribution of the Kickstarter data.
 ![](BoxPlot.png)
+* The mean campaign is about £4,000, but it is ouside the range for amount pledged, so Louise should try to get her play produced for less than £4,000. The median of the campaign goals is at about 2,000, so half of the goals are less than £2,000, which is right above the third quartile for pledged amounts. This means that 75% of the amounts pledged were around £2,000.
+
 ### Analysis of Outcomes Based on Launch Date
-* Pivot tables and graphs in Excel were used to visualize the campaign outcomes based on the launch date. The outcomes were labeled as "successful," "failed," or "canceled."
+* Pivot tables and graphs in Excel were used once again to visualize the campaign outcomes based on the launch date. The outcomes were labeled as "successful," "failed," or "canceled."
 ![](Theater_Outcomes_vs_Launch.png)
 * 
-* A new column was created in the workbook and the year was extracted from the "Date Created Conversion" column using the following code
-```
-YEAR(serial_number)
-```
+* A new column was created in the workbook and the year was extracted from the "Date Created Conversion" column using the YEAR() function in Excel. Then a Pivot table was produced with the data, which was made into the above line graph.
+* June had the highest number of successful campaigns at 111, and July and October both had the most failed with 50. 
+* The number of successful and failed stay relatively similar until around May and June where the amount of successful campaigns rocketed up. Interestingly, the difference decreases as the year progresses to almost the exact same number in December. There is definitely a trend represented in this data.
+
 ### Analysis of Outcomes Based on Goals
 ![](Outcomes_vs_Goals.png)
 ### Challenges and Difficulties Encountered
@@ -52,7 +54,8 @@ YEAR(serial_number)
 ## Results
 * Overall, the data exemplifies that theater is a very popular and successful type of campaign. 
 * The launch date of a campaign does correlate with its success. There is a spike of successful campaigns beginning in June that dwindles off by the end of the year.
-* Campaigns launched in the spring and summer months, particulary May, June, and July are more likely to be successful than those beginning in the winter months like November and December. Louise should aim to launch her campaign during May or June. This could be due to holidays in the winter months, as people are spending more during these months. 
+* Campaigns launched in the spring and summer months, particulary May, June, and July are more likely to be successful than those beginning in the winter months like November and December. This could be due to holidays in the winter months, as people are spending more during these months. 
+* Louise should aim to launch her campaign during June. 
 * Failed Kickstarter campaigns have much higher fundraising goals than those that are successful. It is better to have a more reasonable goal under $5,000. Furthermore, campaigns that were funded with under $4,000 had the most success rate at about 80%. 
 * One limitation of this dataset is the lack of data on the donors. It would be useful to know their preferred method of donation or previously effective fundraising strategies.
 * Some other limitations of this dataset include not knowing the target audience completely. It would be helpful to look at the demographics and behaviors of Louise's target audience as this could affect her campaign. Knowing the age and geographical location of the play's audience could help give additional insight and help with campaign strategics. 

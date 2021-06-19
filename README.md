@@ -32,6 +32,7 @@
  * The mean goal for failed campaigns at about $10000 is about double the mean goal for successful ones at $5000. Furthermore the standard deviations are about two times the IQR in every distribution except the failed campaigns, which indicates there must be some failed Kickstarters with really high goals. 
  * The standard deviations are also larger than the mean values in every distribution so everything under the mean is close to the center. As such, the fundraising goal has a mich better chance of being successful if it stays below $5000. 
 * Then a Box Plot was made to actually show the distribution of the Kickstarter data.
+![](BoxPlot.png)
 ### Analysis of Outcomes Based on Launch Date
 * Pivot tables and graphs in Excel were used to visualize the campaign outcomes based on the launch date. The outcomes were labeled as "successful," "failed," or "canceled."
 ![](Theater_Outcomes_vs_Launch.png)
